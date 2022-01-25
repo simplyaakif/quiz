@@ -1,0 +1,98 @@
+{
+    "routePrefix": "admissions.table",
+    "dataRouteSuffix": "data",
+    "name": "ACE Institute Queries Report",
+    "selectable": false,
+    "crtNo": true,
+    "buttons": [
+        {
+            "type": "row",
+            "icon": "eye",
+            "class": "is-small is-table-button has-margin-left-small is-naked",
+            "event": "view"
+        }
+    ],
+    "columns": [
+        {
+            "label": "Reg. #",
+            "name": "a_reg_id",
+            "data": "admissions.a_reg_id",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Name",
+            "name": "a_name",
+            "data": "admissions.a_name",
+            "class": "text-capitalize",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Mobile",
+            "name": "a_mobile",
+            "data": "admissions.a_mobile",
+            "meta": [
+                "searchable"
+            ]
+        },
+        {
+            "label": "Email",
+            "name": "a_email",
+            "data": "a_email",
+            "meta": [
+                "rogue"
+            ]
+        },
+        {
+            "label": "Course",
+            "name": "c_title",
+            "data": "courses.c_title",
+            "class": "tagged",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Batch",
+            "name": "b_name",
+            "data": "batches.b_name",
+            "class": "has-text-info ",
+            "meta": [
+                "sortable"
+            ]
+        },
+        {
+            "label": "Class Timings",
+            "name": "b_timings",
+            "data": "batches.b_timings",
+            "meta": [
+                "sortable"
+            ]
+        },
+
+        {
+            "label": "Status",
+            "name": "completion_status",
+            "data": "batch_admission.completion_status",
+            "meta": [
+                "slot"
+            ]
+        },
+        {
+            "label": "Admitted At",
+            "name": "created_at",
+            "data": "admissions.created_at",
+            "meta": [
+                "date",
+                "sortable",
+                "sort:DESC"
+            ]
+        }
+    ]
+}

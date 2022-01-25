@@ -1,0 +1,6 @@
+POST http://127.0.0.1:8000/quizcheck
+Content-Type: application/json
+
+{"quizmcq":["the oldest of","strict","overlooked","was it possible","burned"]}
+
+###
