@@ -20,8 +20,8 @@
     Route::post('/quizcheck', 'LandingController@quiz');
 
 
-    Route::get('initTable', 'InitTable')->name('initTable');
-    Route::get('tableData', 'TableData')->name('tableData');
+//    Route::get('initTable', 'InitTable')->name('initTable');
+//    Route::get('tableData', 'TableData')->name('tableData');
     Route::get('/eresult', function () {
         return view('eresults');
     });
